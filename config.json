@@ -23,8 +23,5 @@
             }
         ]
     },
-    "permissions": [
-        "redcap_every_page_top"
-    ],
     "framework-version": 12
 }
