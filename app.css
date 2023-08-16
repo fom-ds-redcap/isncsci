@@ -1,0 +1,388 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Century Gothic, Verdana, Sans-Serif;
+}
+
+h1, h2, h3, h4 {
+	color: #000;
+	font-weight: normal;
+	line-height: 1.3em;
+}
+
+textarea {
+	border: solid 1px #999;
+	color: #666;
+	padding-left: 3px;
+	font-family: Palatino Linotype, Times New Roman, Serif;
+	font-style: italic;
+	resize: none;
+}
+
+table {
+	border-collapse: separate;
+}
+
+thead .measurement-technique {
+	font-size: .7em;
+	width: 42px;
+}
+
+thead .side-label {
+	font-size: 2em;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+tbody label, tbody .helper {
+	font-size: .8em;
+}
+
+tbody .helper span {
+	font-size: .7em
+}
+
+tbody .location {
+	font-size: 1.1em;
+	max-width: 90px;
+	text-align: center;
+}
+
+tbody .location-description {
+	font-size: .8em;
+	max-width: 90px;
+	text-align: center;
+}
+
+tfoot .total-label {
+	font-size: .8em;
+	font-style: italic;
+	text-transform: uppercase;
+}
+
+th, td {
+	font-weight: normal;
+}
+
+ul {
+	list-style: none;
+}
+
+#diagram-column {
+	margin-top: 110px;
+}
+
+ #body-data {
+	display: flex;
+}
+
+#right-column tbody .level-name, #right-column tbody .helper,
+	#right-column tfoot .total-label, #right-column tfoot .maximum-label {
+	text-align: right;
+}
+
+#LowestNonKeyMuscleWithMotorFunction select {
+	width: 180px;
+}
+
+#Comments {
+	width: 250px;
+	height: 140px;
+}
+
+#subscores {
+	clear: both;
+	overflow: auto;
+	display: flex;
+}
+
+#subscores li {
+	float: left;
+	margin-right: 10px;
+	font-size: .8em;
+}
+
+#subscores .item {
+	line-height: 25px;
+}
+
+#TouchTotal, #LowerMotorTotal, #UpperMotorTotal {
+	margin-right: 15px;
+}
+
+.total {
+	border: solid 1px #666;
+	font-family: Georgia;
+	font-size: 1.2em;
+	line-height: 25px;
+	text-align: center;
+	width: 40px;
+	height: 27px;
+}
+
+#subscores .total, #test-titals .total {
+	display: inline-block;
+}
+
+#test-totals {
+	clear: both;
+	border: solid 1px #000;
+	display: flex;
+}
+
+#test-totals .block {
+	float: left;
+	margin: 5px 10px;
+}
+
+#test-totals .title {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+#test-totals .helper {
+	text-align: center;
+	font-size: .7em;
+}
+
+#test-totals .title, #test-totals th {
+	font-size: .9em;
+	text-transform: uppercase;
+}
+
+#test-totals .total {
+	margin-left: 5px;
+}
+
+#actions-container {
+	overflow: hidden;
+	border-bottom: solid 1px #e2e2e2;
+	padding-bottom: 10px;
+}
+
+#actions-container li {
+	float: right;
+	margin-right: 10px;
+}
+
+#actions-container a {
+	border: none;
+	color: #666;
+	display: inline-block;
+	font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
+	font-size: 8pt;
+	font-weight: bold;
+	margin: 0;
+	padding: 10px 10px 9px 25px;
+	text-align: left;
+	text-decoration: none;
+	white-space: nowrap;
+}
+
+#actions-container span, #save-data-section button {
+	border: solid 1px #ccc;
+	display: inline-block;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff),
+		to(#e6e6e6));
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF',
+		endColorstr='#E6E6E6')
+}
+
+#help a {
+	background: url(imgs/PageActions/help.gif) no-repeat 8px center;
+}
+
+#resources a {
+	background: url(imgs/PageActions/resources.gif) no-repeat 8px center;
+}
+
+#clearContent a {
+	background: url(imgs/PageActions/clear.gif) no-repeat 8px center;
+}
+
+#calculator a {
+	background: url(imgs/PageActions/calculator.gif) no-repeat 8px center;
+}
+
+#download a {
+	background: url(imgs/PageActions/pdf.gif) no-repeat 8px center;
+}
+
+#section {
+	overflow: hidden;
+}
+
+#input-controls {
+	margin: 15px 15px 0 0px;
+}
+
+#input-controls .label {
+	width: 130px;
+	font-size: 0.8em;
+}
+
+#input-controls-value-buttons {
+	background-color: #e2e2e2;
+	clear: left;
+	overflow: auto;
+	width: 100%;
+	padding: 0;
+}
+
+#input-controls-value-buttons .combo-item {
+	float: left;
+	margin: 2px;
+}
+
+#input-controls-value-buttons .combo-item span.disabled {
+	background: #ccc;
+	color: #666;
+	filter: none;
+}
+
+#input-controls-value-buttons .combo-item span {
+	display: inline-block;
+	font-size: .9em;
+	padding: 5px 0;
+	text-align: center;
+	width: 38px;
+	background: -webkit-linear-gradient(top,#fff 0,#fff 20%,#e9e9e9 100%);
+	border: solid 1px #ccc;
+}
+
+#impairment-flags-explanation {
+	background-color: #f15a24;
+	color: #fff;
+	float: left;
+	font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
+	font-size: .7em;
+	font-weight: normal;
+	padding: 5px;
+	white-space: normal;
+	width: 100%;
+}
+
+#ConsiderationForImpairmentNotDueToSci, #ReasonForImpairmentNotDueToSci
+	{
+	border: solid 1px #999;
+	height: 30px;
+	width: 100%;
+}
+
+#CommentsReasonForImpairmentNotDueToSci {
+	height: 65px;
+	width: 100%;
+}
+
+#extra-input-controls {
+	font-size: .8em;
+}
+
+#header {
+	border-bottom: solid 1px #e2e2e2;
+	padding: .4em 0;
+	position: sticky;
+	top: 0;
+	width: 100%;
+	overflow: auto;
+	background: #fff;
+}
+
+#save-data-section {
+	padding: 10px;
+	border-bottom: solid 1px #e2e2e2;	
+	display:none;
+}
+
+#exam-info {
+	display: flex;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+#exam-info > div, #examiner-info > div {
+	margin-top: 10px;
+	margin-right: 5px;
+	border: solid 1px #000;
+	padding: 5px;
+}
+
+#other-examiner-text {
+	display: none;
+}
+
+#additional-questions {
+	margin-top: 30px;
+	display: flex;
+}
+
+#additional-questions > div {
+	margin-left: 0px;
+	border: solid 1px #000;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	padding: 10px;
+}
+
+#classificationsComments {
+	height: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	resize: vertical;
+}
+
+#main-content {
+	width: 1200px;
+}
+
+.helper {
+	font-style: italic;
+}
+
+.smart-cell {
+	background-color: #e2e2e2;
+	border: solid 1px #ccc;
+	font-family: Georgia;
+	font-size: 1.2em;
+	width: 40px;
+	-webkit-box-shadow: 2px 2px rgba(226, 226, 226, .7);
+	-moz-box-shadow: 2px 2px rgba(226, 226, 226, .7);
+	box-shadow: 2px 2px rgba(226, 226, 226, .7);
+	height: 25px;
+	line-height: 23px;
+	text-align: center;
+	text-decoration: none;
+	color: #0098d9;
+}
+
+.smart-cell.entered-by-user span {
+	background-color: #fff
+}
+
+.smart-cell.specify-consideration span {
+	outline: 1px solid red
+}
+
+.selected-cell {
+	border: solid 1px #ffa500;	
+}
+
+.zpp {
+	display: flex;
+}
+
+.flagged-cell {
+	border: solid 1px #ff5200;
+}
+
+.manually-entered-cell {
+	background: white;
+}
+
+.question-label {
+	margin-right: 15px;
+}]

@@ -1,0 +1,30 @@
+{
+    "name": "ISNCSCI Form",
+    "namespace": "FOMDS\\ISNCSCI",
+    "description": "A version of the International Standards for Neurological Classification of Spinal Cord Injury (ISNCSCI) that has been adapted for REDCap. The module will take values, calculate totals, and allows users to save the report to an associated REDCap instrument in the project. The project XML can be found on our public GitHUB.",
+    "authors": [
+        {
+            "name": "Ashley Lee",
+            "email": "ashley.lee@ubc.ca",
+            "institution": "University of British Columbia Faculty of Medicine - Digital Solutions"
+        },
+        {
+            "name": "Annie Wang",
+            "email": "zining.wang@ubc.ca",
+            "institution": "University of British Columbia Faculty of Medicine - Digital Solutions"
+        }
+    ],
+    "links": {
+        "project": [
+            {
+                "name": "ISNCSCI Form",
+                "url": "index.php",
+                "icon": "fas fa-wrench"
+            }
+        ]
+    },
+    "permissions": [
+        "redcap_every_page_top"
+    ],
+    "framework-version": 12
+}
