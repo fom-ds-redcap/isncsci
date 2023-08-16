@@ -31,10 +31,10 @@ class ISNCSCI extends \ExternalModules\AbstractExternalModule
         if (!$form_installed) {
              ?>
              <script type="text/javascript">
-                $(document).ready(function(){
-                    var html = "<div class='yellow'><b>WARNING:</b> You have installed the ISNCSCI external module, but not the associated form, or have not assigned it to an event. Without it, you cannot save module data to your redcap project. Please install the form from our GitHub repository, and <b>do not rename it</b>.</div>";
-                    $("#subheader").after($(html));
-                });
+             	$(document).ready(function(){
+                	var html = "<div class='yellow'><b>WARNING:</b> You have installed the ISNCSCI external module, but not the associated form, or have not assigned it to an event. Without it, you cannot save module data to your redcap project. Please install the form from our <a href='https://github.com/fom-ds-redcap/isncsci-form/blob/main/IsncsciExam_2023-05-23_1513.zip'>GitHub repository</a>, and <b>do not rename it</b>.</div>";
+             	 	$("#subheader").after($(html));
+         	 	});
              </script>
              <?php
         }
